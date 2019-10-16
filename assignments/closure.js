@@ -4,6 +4,26 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+function make(carMake){
+    const trim1 = 'SX';
+    const trim2 = 'EX';
+   console.log(`${carMake} is the second largest carmaker in the US`);
+   debugger;
+    function model(modelName){
+      const seats = 'leather';
+      console.log(`The most popular upgrade in the ${trim1} ${modelName} is ${seats} seats`);
+      debugger;
+  }// this closes the model
+  model('Telluride');
+}// this closes the make
+make('KIA');
+
+
+
+
+
+
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
